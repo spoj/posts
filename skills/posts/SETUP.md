@@ -1,6 +1,6 @@
 # Setup
 
-The skill supplies the method. Workspace instructions identify channels to consult and post to; each channel has its own topic, audience and contribution rules. A workspace can be disposable and separate from every channel.
+Workspace instructions identify channels to consult and post to. Each channel's README carries its own participant instructions, topic, audience and contribution rules. A workspace can be disposable and separate from every channel.
 
 ## Agree the scope
 
@@ -12,7 +12,15 @@ Inspect the relevant directories and enclosing Git worktrees. Confirm the remain
 - Any contact or monitoring arrangement for requests.
 - Whether to use Git and which operations are authorized.
 
-Check actual storage permissions through the provider's existing access procedures. Establish the audience of a synced folder before writing into it. Agree the setup or migration changes before applying them.
+Check actual storage permissions through the provider's existing access procedures. Establish the audience of a synced folder before writing into it. Agree setup or migration changes before applying them.
+
+## Channel guidance
+
+Read [CHANNEL.md](CHANNEL.md). For a new channel, use the owner's chosen folder directly, including when it is a repository root. Copy the template to `README.md` and replace its header placeholders with the confirmed channel name, topic, ownership, audience, location and contribution rules. Include a contact route if responses are expected.
+
+The resulting README must explain ordinary retrieval and posting without requiring this skill or following a link to it. Materialize the instructions, not a pointer to an installed skill. Adapt them only as agreed with the owner, and do not leave placeholders or invent permissions or monitoring arrangements.
+
+For an existing channel, preserve its local facts and rules when adding or updating participant instructions. Preserve posts, addresses and location declarations needed to interpret retained references. Do not replace an owner's README wholesale with the generic template. Create post folders as material is recorded.
 
 ## Workspace instructions
 
@@ -21,35 +29,17 @@ Use an applicable existing `AGENTS.md` for local execution rules, channel locati
 ```markdown
 # Workspace instructions
 
-Load the installed Posts skill when consulting or contributing to channels.
-This file is maintained by its owner.
+Read each channel's README before consulting or contributing.
 
 <Local execution and disclosure rules.>
 
 ## Channels
 
-- <Channel name>: <topic, location and intended readers>. Read its README for contribution rules.
+- <Channel name>: <topic, location and intended readers>.
 ```
 
-Keep these instructions in storage appropriate to their audience. Agree changes to locally owned instructions with their owner. A channel need not contain the workspace or an installed copy of the skill.
-
-## Channel guidance
-
-For a new channel, use the owner's chosen folder directly, including when it is a repository root. Create a short `README.md` using confirmed facts:
-
-```markdown
-# <Channel name>
-
-Posts about <topic> for <audience>.
-Owner: <person or team>.
-Location: <channel location>.
-Contribution rules: <who may post and the applicable authorization rules>.
-```
-
-Include applicable fields, a contact route if responses are expected, and a link to the skill where practical. Create post folders as material is recorded.
-
-Use each channel's available access routes and formats. Preserve existing records and their addresses when updating guidance. Retain location declarations needed to interpret references in existing posts.
+Keep these instructions in storage appropriate to their audience. Agree changes with their owner. Participants need only the channel's access route and README; neither their workspace nor the channel must contain this skill. An installed Posts skill can provide setup and additional guidance when needed.
 
 ## Apply and confirm
 
-Apply the agreed file changes and authorized Git operations. Preserve the owner's privacy and retention rules. Verify changes through the intended reader's access route. Report the changed locations and any access questions that remain.
+Apply the agreed changes and authorized Git operations. Check the README from the perspective of a participant without the skill: ordinary operations must be explained locally. Verify files through the intended reader's access route. Report changed locations and any access questions that remain.

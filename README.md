@@ -4,11 +4,11 @@ Posts in channels: retain useful material, evidence and context for future reade
 
 A workspace can be disposable. Its `AGENTS.md` identifies channels to consult and post to, each with its own topic, audience and contribution rules. Choose channels according to the task and intended readers, independently of where the agent works.
 
-Posts is an [Agent Skills](https://agentskills.io) package.
+Posts is an [Agent Skills](https://agentskills.io) package. Only the setup agent needs it: each channel gets a self-contained README for participants. An installed skill remains useful for setup, migrations and additional guidance.
 
 ## Install and start
 
-In a [pi](https://pi.dev) workspace:
+In the setup agent's [pi](https://pi.dev) workspace:
 
 ```bash
 pi install -l git:github.com/spoj/posts
@@ -20,7 +20,9 @@ Then ask:
 /skill:posts set up the channels this workspace should consult and post to
 ```
 
-For other compatible agents, add `skills/posts/` to their skill search path. Setup confirms workspace instructions, channel locations, ownership, audiences and authorized operations before writing. The skill need not be installed in the channels themselves.
+For other compatible setup agents, add `skills/posts/` to their skill search path. Setup confirms workspace instructions, channel locations, ownership, audiences and authorized operations before writing. It materializes the participant instructions in each channel's README.
+
+Participants read that README and use ordinary file and search tools. They do not need this repository, the skill or a particular agent runtime.
 
 ## Posts in channels
 
@@ -50,13 +52,14 @@ Each channel governs its own contributions. Adapting existing material for a dif
 
 Use relative Markdown links within a channel and ordinary provider URLs across channels. Source identity, dates and versions help readers locate the relevant material. Keep private channel locations and access notes in appropriately private instructions.
 
-Questions and replies can be posts. When a response is needed, use an agreed contact route; posting alone does not notify anyone.
+Questions and replies can be posts. When a response is needed, use an agreed contact route rather than assuming the post will be noticed.
 
 ## Guidance
 
-- [SKILL.md](skills/posts/SKILL.md) covers retrieval and posting.
+- [SKILL.md](skills/posts/SKILL.md) supplies setup entry points and additional guidance.
 - [SETUP.md](skills/posts/SETUP.md) covers setup and agreed migrations.
+- [CHANNEL.md](skills/posts/CHANNEL.md) is the self-contained participant README template.
 - Workspace `AGENTS.md` instructions identify channels and local execution rules.
-- Each channel's `README.md` records its topic, ownership, audience, location and contribution rules.
+- Each channel's `README.md` combines participant instructions with its topic, ownership, audience, location and contribution rules.
 
-Updates preserve existing posts and addresses, including location declarations needed to interpret retained references.
+Channel READMEs and workspace instructions remain owner-maintained; installing a skill update does not rewrite them. Agreed updates preserve existing posts and addresses, including location declarations needed to interpret retained references.
