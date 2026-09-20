@@ -1,30 +1,30 @@
-# Works
+# Posts
 
-A communication channel to future agents: a collection of dated folders, each retaining a message with useful material, evidence and context.
+Posts in channels: retain useful material, evidence and context for future readers and agents using ordinary files and existing storage tools.
 
-Messages are free-form. One may contain an original email; another may hold a substantial investigation with documents, calculations, code and results. Explanation supplies context where the material needs it. Evidence can live alongside the message or at a dependable referenced location.
+A workspace can be disposable. Its `AGENTS.md` identifies channels to consult and post to, each with its own topic, audience and contribution rules. Choose channels according to the task and intended readers, independently of where the agent works.
 
-Works is an [Agent Skills](https://agentskills.io) package for ordinary files and existing storage tools.
+Posts is an [Agent Skills](https://agentskills.io) package.
 
 ## Install and start
 
-In [pi](https://pi.dev):
+In a [pi](https://pi.dev) workspace:
 
 ```bash
-pi install git:github.com/spoj/works
+pi install -l git:github.com/spoj/posts
 ```
 
-Open pi in the intended workspace and ask:
+Then ask:
 
 ```text
-/skill:works setup here
+/skill:posts set up the channels this workspace should consult and post to
 ```
 
-For other compatible agents, add `skills/works/` to their skill search path. Setup confirms the collection location, ownership, audience and authorized operations before writing.
+For other compatible agents, add `skills/posts/` to their skill search path. Setup confirms workspace instructions, channel locations, ownership, audiences and authorized operations before writing. The skill need not be installed in the channels themselves.
 
-## Messages
+## Posts in channels
 
-Use the chosen collection folder directly. For example:
+Use the chosen channel folder directly. For example:
 
 ```text
 README.md
@@ -36,25 +36,27 @@ README.md
     result.csv
 ```
 
-New message folders use `YYYY-MM-DD-short-description/`, dated when first recorded. Their addresses remain stable. Source and observation dates travel with the material so future readers can understand when it applies.
+A post is free-form: an original email, observation, question, reply or substantial investigation. Add explanation where the material needs context. Evidence can live alongside the post or at a dependable referenced location.
 
-Preserve original evidence and the distinctions between observations, inferences, proposals and decisions. Prefer adding developments and corrections as new messages, identifying affected earlier material when known. Meaning-preserving edits can be made in place.
+New post folders use `YYYY-MM-DD-short-description/`, dated when first recorded. Keep their addresses stable and preserve source dates, provenance and original evidence. Distinguish observations, inferences, proposals and decisions where it matters.
 
-Routine contributions add messages; collection-wide changes follow the owner's explicit request. Agents use ordinary tools to investigate the current question and generate explanations for the present audience at use time. New evidence, observations, decisions and reasoning can become further messages.
+Prefer new posts for developments and corrections, linking affected earlier material when known. Meaning-preserving edits can be made in place. Routine contributions add posts; channel-wide changes follow the owner's explicit request.
 
-## Connections and other collections
+Agents investigate the current question and generate explanations for the present audience at use time. New evidence, observations, decisions and reasoning can become further posts in appropriate channels.
 
-Use relative Markdown links within a collection and ordinary provider URLs across collections. Source identity, dates and versions help readers locate the relevant material.
+## Audience and access
 
-Each collection retains its own ownership, structure and contribution rules. Use its available access routes and formats. Choose copying or linking according to authorization, expected access and version stability. Shared messages carry context and evidence routes suitable for their recipients.
+Each channel governs its own contributions. Adapting existing material for a different audience produces another post: supply suitable context and evidence routes, remove restricted material, and preserve source posts. Disclosure, destination permissions and Git operations follow the owners' rules and authorization.
 
-Personal followed locations and access notes belong in private local instructions. Storage permissions, sharing and Git operations follow the owner's authorization.
+Use relative Markdown links within a channel and ordinary provider URLs across channels. Source identity, dates and versions help readers locate the relevant material. Keep private channel locations and access notes in appropriately private instructions.
+
+Questions and replies can be posts. When a response is needed, use an agreed contact route; posting alone does not notify anyone.
 
 ## Guidance
 
-- [SKILL.md](skills/works/SKILL.md) contains the capture, retrieval and sharing protocol.
-- [SETUP.md](skills/works/SETUP.md) covers setup and agreed migrations.
-- Each collection's `README.md` records its ownership, audience, location and contribution rules.
-- An optional, owner-maintained `AGENTS.md` holds local instructions.
+- [SKILL.md](skills/posts/SKILL.md) covers retrieval and posting.
+- [SETUP.md](skills/posts/SETUP.md) covers setup and agreed migrations.
+- Workspace `AGENTS.md` instructions identify channels and local execution rules.
+- Each channel's `README.md` records its topic, ownership, audience, location and contribution rules.
 
-Keep the reusable method in the skill and local facts in the collection's own guidance. Updates to existing collections preserve their records and addresses, including location declarations that explain retained references.
+Updates preserve existing posts and addresses, including location declarations needed to interpret retained references.
