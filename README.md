@@ -1,65 +1,31 @@
 # Posts
 
-Posts in channels: retain useful material, evidence and context for future readers and agents using ordinary files and existing storage tools.
+Posts in channels: retain useful material, evidence and context for future readers and agents using ordinary files.
 
-A workspace can be disposable. Its `AGENTS.md` identifies channels to consult and post to, each with its own topic, audience and contribution rules. Choose channels according to the task and intended readers, independently of where the agent works.
+To start a channel, use the requested directory directly and put a copy of this README there. It works as-is; no setup metadata is required. Preserve existing records and local instructions. Use existing storage and permissions.
 
-Posts is an [Agent Skills](https://agentskills.io) package. Only the setup agent needs it: each channel gets a self-contained README for participants. An installed skill remains useful for setup, migrations and additional guidance.
+Workspace instructions can identify channels to consult and post to. Choose channels by topic and intended readers, independently of where the agent works.
 
-## Install and start
+## Retrieve
 
-In the setup agent's [pi](https://pi.dev) workspace:
+Use ordinary search and reading tools across the material relevant to the task. Let the question determine search depth, source checking and investigation of later developments. Interpret each post in its evidential and temporal context; posting old evidence again does not make it current.
 
-```bash
-pi install -l git:github.com/spoj/posts
-```
+Generate explanations for the present audience at use time. New evidence, observations, decisions and reasoning can become posts in appropriate channels, within their contribution rules. Make access gaps and unresolved uncertainty clear rather than inventing missing context.
 
-Then ask:
+## Post
 
-```text
-/skill:posts set up the channels this workspace should consult and post to
-```
+Follow local contribution and disclosure rules. Supply context and evidence routes suitable for the intended readers; remove restricted material and make known limitations clear. Check attachments and linked dependencies as well as the main text. Preserve source posts when adapting material for another audience.
 
-For other compatible setup agents, add `skills/posts/` to their skill search path. Setup confirms workspace instructions, channel locations, ownership, audiences and authorized operations before writing. It materializes the participant instructions in each channel's README.
+Create a `YYYY-MM-DD-short-description/` folder directly in the channel, dated when the post is first recorded. Choose a distinct address and keep it stable.
 
-Participants read that README and use ordinary file and search tools. They do not need this repository, the skill or a particular agent runtime.
+Contents are free-form: an original email, an observation, a question or an investigation with documents, calculations, scripts and results. Add explanation where needed. Preserve source and observation dates, provenance and relevant versions. Distinguish observations, inferences, proposals and decisions where it matters.
 
-## Posts in channels
+Keep evidence with the post or reference another post or a dependable external source. Choose copying or linking according to expected access and version stability. Preserve original evidence bytes.
 
-Use the chosen channel folder directly. For example:
+Use relative Markdown links within a channel and ordinary provider URLs across channels. Include source identity, date or version where useful for locating the material.
 
-```text
-README.md
-2026-09-19-owner-email/
-    message.eml
-2026-09-20-invoice-check/
-    observation.md
-    query.sql
-    result.csv
-```
+Prefer new posts for developments and corrections, linking affected earlier material and explaining what changes. Meaning-preserving edits can be made in place. Routine contributions add posts; channel-wide changes require the owner's request.
 
-A post is free-form: an original email, observation, question, reply or substantial investigation. Add explanation where the material needs context. Evidence can live alongside the post or at a dependable referenced location.
+Questions and replies can be posts. Explain the attempted use and missing information, and link the relevant material. When a response is needed, use an agreed contact route rather than assuming the post will be noticed.
 
-New post folders use `YYYY-MM-DD-short-description/`, dated when first recorded. Keep their addresses stable and preserve source dates, provenance and original evidence. Distinguish observations, inferences, proposals and decisions where it matters.
-
-Prefer new posts for developments and corrections, linking affected earlier material when known. Meaning-preserving edits can be made in place. Routine contributions add posts; channel-wide changes follow the owner's explicit request.
-
-Agents investigate the current question and generate explanations for the present audience at use time. New evidence, observations, decisions and reasoning can become further posts in appropriate channels.
-
-## Audience and access
-
-Each channel governs its own contributions. Adapting existing material for a different audience produces another post: supply suitable context and evidence routes, remove restricted material, and preserve source posts. Disclosure, destination permissions and Git operations follow the owners' rules and authorization.
-
-Use relative Markdown links within a channel and ordinary provider URLs across channels. Source identity, dates and versions help readers locate the relevant material. Keep private channel locations and access notes in appropriately private instructions.
-
-Questions and replies can be posts. When a response is needed, use an agreed contact route rather than assuming the post will be noticed.
-
-## Guidance
-
-- [SKILL.md](skills/posts/SKILL.md) supplies setup entry points and additional guidance.
-- [SETUP.md](skills/posts/SETUP.md) covers setup and agreed migrations.
-- [CHANNEL.md](skills/posts/CHANNEL.md) is the self-contained participant README template.
-- Workspace `AGENTS.md` instructions identify channels and local execution rules.
-- Each channel's `README.md` combines participant instructions with its topic, ownership, audience, location and contribution rules.
-
-Channel READMEs and workspace instructions remain owner-maintained; installing a skill update does not rewrite them. Agreed updates preserve existing posts and addresses, including location declarations needed to interpret retained references.
+Verify posted files through the intended reader's access route. Follow the owner's privacy and retention rules. Keep live credentials and access-token-bearing URLs in appropriate private credential storage. Use only authorized Git operations and permission changes.
