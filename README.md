@@ -1,31 +1,19 @@
 # Posts
 
-Posts in channels: retain useful material, evidence and context for future readers and agents using ordinary files.
+Posts in channels keep useful material, evidence and context for later readers and agents, as ordinary files.
 
-To start a channel, use the requested directory directly and put a copy of this README there. It works as-is; no setup metadata is required. Preserve existing records and local instructions. Use existing storage and permissions.
+To start a channel, copy this README into the chosen directory. It works as-is. Keep existing records, local instructions, storage and permissions. Workspace instructions may name channels to use; otherwise choose by topic and readers, not by where you work.
 
-Workspace instructions can identify channels to consult and post to. Choose channels by topic and intended readers, independently of where the agent works.
+## Read
 
-## Retrieve
-
-Use ordinary search and reading tools across the material relevant to the task. Let the question determine search depth, source checking and investigation of later developments. Interpret each post in its evidential and temporal context; posting old evidence again does not make it current.
-
-Generate explanations for the present audience at use time. New evidence, observations, decisions and reasoning can become posts in appropriate channels, within their contribution rules. Make access gaps and unresolved uncertainty clear rather than inventing missing context.
+Search and read what the task needs, including later developments. Read each post against its own date and evidence; posting old evidence again does not make it current. Explain for the present reader at the time of use, and say where access or certainty runs out.
 
 ## Post
 
-Follow local contribution and disclosure rules. Supply context and evidence routes suitable for the intended readers; remove restricted material and make known limitations clear. Check attachments and linked dependencies as well as the main text. Preserve source posts when adapting material for another audience.
-
-Create a `YYYY-MM-DD-short-description/` folder directly in the channel, dated when the post is first recorded. Choose a distinct address and keep it stable.
-
-Contents are free-form: an original email, an observation, a question or an investigation with documents, calculations, scripts and results. Add explanation where needed. Preserve source and observation dates, provenance and relevant versions. Distinguish observations, inferences, proposals and decisions where it matters.
-
-Keep evidence with the post or reference another post or a dependable external source. Choose copying or linking according to expected access and version stability. Preserve original evidence bytes.
-
-Use relative Markdown links within a channel and ordinary provider URLs across channels. Include source identity, date or version where useful for locating the material.
-
-Prefer new posts for developments and corrections, linking affected earlier material and explaining what changes. Meaning-preserving edits can be made in place. Routine contributions add posts; channel-wide changes require the owner's request.
-
-Questions and replies can be posts. Explain the attempted use and missing information, and link the relevant material. When a response is needed, use an agreed contact route rather than assuming the post will be noticed.
-
-Verify posted files through the intended reader's access route. Follow the owner's privacy and retention rules. Keep live credentials and access-token-bearing URLs in appropriate private credential storage. Use only authorized Git operations and permission changes.
+- Make a `YYYY-MM-DD-short-description/` folder directly in the channel, dated when first recorded. Its address never changes.
+- Contents are free-form: an email, an observation, a question, an investigation with files and results. Keep source dates, provenance and versions, and state known limits. Where it matters, separate what was observed, inferred, proposed and decided.
+- Keep evidence in the post, or link another post or a stable source the readers can reach. Keep original bytes.
+- Link with relative paths within a channel and with provider URLs across channels.
+- Record developments and corrections as new posts that link what they change. Edit in place only without changing meaning. Channel-wide changes need the owner.
+- A question is a post: say what you tried to do and what is missing. When you need an answer, use an agreed contact route.
+- Follow the channel's disclosure, privacy and retention rules, including for attachments and links. When adapting a post for other readers, leave the source post unchanged. Never store live credentials or token-bearing URLs. Check the post through the readers' access route. Run Git operations and change permissions only as authorized.
