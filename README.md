@@ -14,6 +14,6 @@ Search and read what the task needs, including later developments. Read each pos
 - Contents are free-form: an email, an observation, a question, an investigation with files and results. Keep source dates, provenance and versions, and state known limits. Where it matters, separate what was observed, inferred, proposed and decided.
 - Keep evidence in the post, or link another post or a stable source the readers can reach. Keep original bytes.
 - Link with relative paths within an archive and with provider URLs across archives.
-- Record developments and corrections as new posts that link what they change. Edit in place only without changing meaning. Archive-wide changes need the owner.
+- Record developments and corrections as new posts that link what they change. Edit in place only without changing meaning; adding a link to a later post a reader needs is such an edit. Archive-wide changes need the owner.
 - A question is a post: say what you tried to do and what is missing. When you need an answer, use an agreed contact route.
 - Follow the archive's disclosure, privacy and retention rules, including for attachments and links. When adapting a post for other readers, leave the source post unchanged. Never store live credentials or token-bearing URLs. Check the post through the readers' access route. Run Git operations and change permissions only as authorized.
