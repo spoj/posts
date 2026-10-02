@@ -1,19 +1,19 @@
 # Posts
 
-Posts in archives keep useful material, evidence and context for later readers and agents, as ordinary files.
+A post is a dated folder of primary evidence, any working and outputs, and a short README. Archives keep posts as ordinary files for later readers and agents.
 
-To start an archive, copy this README into the chosen directory. It works as-is. Keep existing records, local instructions, storage and permissions. Workspace instructions may name archives to use; otherwise choose by topic and readers, not by where you work.
+To start an archive, copy this README into the chosen directory. Keep existing records, local instructions, storage and permissions. Workspace instructions may name archives to use; otherwise choose by topic and readers, not by where you work.
 
 ## Read
 
-Search and read what the task needs, including later developments. Read each post against its own date and evidence; posting old evidence again does not make it current. Explain for the present reader at the time of use, and say where access or certainty runs out.
+Start from READMEs; open evidence and working as the task needs. Read each post against its date and look for later posts that change it; reposting old evidence does not make it current. Where a claim may have changed, re-run its working rather than trust the README. Say where access or certainty runs out.
 
 ## Post
 
 - Make a `YYYY-MM-DD-short-description/` folder directly in the archive, dated when first recorded. Its address never changes.
-- Contents are free-form: an email, an observation, a question, an investigation with files and results. Keep source dates, provenance and versions, and state known limits. Where it matters, separate what was observed, inferred, proposed and decided.
-- Keep evidence in the post, or link another post or a stable source the readers can reach. Keep original bytes.
-- Link with relative paths within an archive and with provider URLs across archives.
-- Record developments and corrections as new posts that link what they change. Edit in place only without changing meaning; adding a link to a later post a reader needs is such an edit. Archive-wide changes need the owner.
-- A question is a post: say what you tried to do and what is missing. When you need an answer, use an agreed contact route.
-- Follow the archive's disclosure, privacy and retention rules, including for attachments and links. When adapting a post for other readers, leave the source post unchanged. Never store live credentials or token-bearing URLs. Check the post through the readers' access route. Run Git operations and change permissions only as authorized.
+- Evidence: keep original bytes with source dates, provenance and versions, or link another post or a stable source the readers can reach.
+- Working: keep the steps taken (queries, scripts, checks, raw extracts, dead ends) and the outputs, as done. Leave out caches and environments.
+- `README.md`: short; a few lines can be enough. Give the result, the reasons and known limits, linking each claim to the files behind it. Where it matters, say whether a claim was observed, inferred, proposed or decided.
+- Link with relative paths within an archive and provider URLs across archives.
+- Change a post freely while its task is active. Afterwards, record developments and corrections as new posts that link what they change, and link to them from the changed post's README; other edits must keep the meaning. Archive-wide changes need the owner.
+- Apply the archive's disclosure, privacy and retention rules to everything in the post, including links. Never store live credentials or token-bearing URLs. Check the post through the readers' access route. Run Git operations and change permissions only as authorized.
